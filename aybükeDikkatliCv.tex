@@ -1,0 +1,263 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Aybüke Dikkatli} \\ \vspace{5pt}
+    \small \faPhone* \texttt{+90 (530) 1667679} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \texttt{aybuke.dikkatli@gmail.com} \hspace{1pt} $|$ 
+    \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{K.çekmece/İstanbul}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Istanbul University}{2021 - Present}
+      {Management Information Systems, 1/4 }
+      
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Beykent University}{2019 - Present}
+      {Industrial Engineering, 2/4}{GPA: 3.20}
+  \resumeSubHeadingListEnd
+
+%
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Colin's}{2022 - Present}
+      {Intern System Analyst}{}
+    \resumeSubheading
+      {Orion UAV}{2021 - Present}
+      {Team Leader}{}
+    \resumeSubheading
+      {Kenge\c{s} E\u{g}itim ve Yard{\i}mla\c{s}ma Derne\u{g}i}{2021 - Present}
+      {Project Manager}{}
+    \resumeSubheading
+      {DeepLab}{2021 - 2022}
+      {DL.U Organization Manager} {}
+      \resumeItemListStart
+        \resumeItem{Managing organization}
+        \resumeItem{Collecting, sorting, and analyzing data}
+         \resumeItem{Create and execute project work plans and revise as appropriate to meet changing needs and requirements}
+        \resumeItem{Create and report project documentation; involve and update related parties on the progress}
+        \resumeItem{Following up the internal communication and work flow of the team }
+     \resumeItemListEnd
+    \resumeSubheading
+      {Kenge\c{s} E\u{g}itim ve Yard{\i}mla\c{s}ma Derne\u{g}i}{2020 - Present}
+      {Business Analyst}{}      
+    \resumeSubheading
+      {Technology Project Team UVOT}{2020 - Present}
+      {Team Leader}{}
+    \resumeSubheading
+      {Makerobotik}{2019 - 2020}
+      {Robotics Coding Teacher}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{ACTIVITIES}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IEEE}{2022 - Present}
+      {Turkey RAS Student Liaison}{}
+    \resumeSubheading
+      {Google Developer Student Clubs}{2022 - Present}
+      {Beykent University Lead}{}
+    \resumeSubheading
+      {Beykent University Blockchain Tech Club}{2022 - Present}
+      {Co-Founder and Lead}{}
+    \resumeSubheading
+      {IEEE}{2021 - 2022}
+      {IEEE TRS RAS Coordination Team Member} {}
+    \resumeSubheading
+      {Google Developer Student Clubs}{2021 - 2022}
+      {Beykent University Core Member}{}
+    \resumeSubheading
+      {IEEE}{2020 - 2021}
+      {IEEE TRS RAS Coordination Team Member}{}      
+    \resumeSubheading
+      {IEEE}{2020 - 2021}
+      {Beykent University Chairwoman of Robotics and Automation Society}{}
+    \resumeSubheading
+      {Gen\c{c} K{\i}z{\i}lay K.\c{c}ekmece}{2020 - 2021}
+      {Chairwoman of Project and Funding Development}{}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Autonomous Fire Fighting Drone}{2020 - 2021}
+      {Project Manager} {}
+    \resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------
+\section{LANGUAGES}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     {Turkish - Native or Bilingual Proficiency}\vspace{2pt} \\
+     {English - Professional Working Proficiency}\vspace{2pt} \\
+    }}
+ \end{itemize}
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     {Risk Management, Project Management, Project Planning, Process Planning, Businnes Analysis, Analytical Thinking}\vspace{2pt} \\
+    }}
+ \end{itemize}
+
+%-----------HOBBIES-----------
+\section{HOBBIES}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     {Robotics Coding, Boxing, Graphic Design, Social Responsibility Projects, Guns}\vspace{2pt} \\
+    }}
+ \end{itemize}
+ 
+
+ 
+%-------------------------------------------
+\end{document}
